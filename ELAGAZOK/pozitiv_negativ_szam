@@ -1,0 +1,12 @@
+<script>
+let szam = Number(prompt("Adja meg egyszámot"));
+if (szam > 0)
+document.write(`a ${szam} pozitív`);
+
+else if (szam == 0)
+document.write(`a ${szam} pontosan nulla`);
+
+else
+document.write(`a ${szam} negatív`);
+
+</script>
