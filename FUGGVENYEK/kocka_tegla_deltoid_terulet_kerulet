@@ -1,0 +1,80 @@
+//Kocka térfogat függvénnyel
+function kockaterfogat(a_oldal){
+	let terfogat = a_oldal*a_oldal*a_oldal;
+    
+    return terfogat;
+   }
+   
+   let eredmény = kockaterfogat (4)
+   document.write("A kocka térfogata:" + eredmény + "<hr>"); 
+  
+//Tégla térfogat függvénnyel
+function teglaterfogat (a_oldal,b_oldal,c_oldal){
+	let terfogat2 = a_oldal*b_oldal*c_oldal;
+    
+    return terfogat2;
+    }
+    
+    let eredmény2 =teglaterfogat(4,6,2)
+    document.write("A tégla térfogata:" +eredmény2 + "<hr>");
+    
+//Négyzet terület
+function negyzetTerulet(a_oldal){
+	let terulet = a_oldal*a_oldal;
+    
+    return terulet;
+    }
+    
+    let eredmény3= negyzetTerulet(2)
+    document.write("A négyzet területe:" +eredmény3 + "<hr>");
+    
+//Négyzet kerület
+function negyzetKerulet(a_oldal){
+	let kerulet = (a_oldal + a_oldal)*2;
+    
+    return kerulet;
+    }
+    
+    let eredmény4 = negyzetKerulet(3)
+    document.write("A négyzet kerülete:" +eredmény4 + "<hr>");
+    
+//Tégla terület
+function teglaTerulet(a_oldal, b_oldal){
+	let teruletT = a_oldal*b_oldal;
+    
+    return teruletT;
+    }
+    
+    let eredmény5 = teglaTerulet(3,2)
+    document.write("A téglat területe:"+eredmény5 + "<hr>");
+
+//Tégla kerület
+function teglaKerulet(a_oldal, b_oldal){
+	let keruletT = (a_oldal+b_oldal)*2;
+    
+    return keruletT;
+    }
+    
+    let eredmény6 = teglaKerulet(3,2)
+    document.write("A tégla kerülete:" +eredmény6 + "<hr>");
+
+//Deltoid Terület T=(e*f)/2
+function deltoidTerulet(e_oldal,f_oldal){
+	let teruletD = (e_oldal*f_oldal)/2;
+    
+    return teruletD;
+    }
+    
+    let eredmény7 = deltoidTerulet(5,7)
+    document.write("A deltoid területe:" +eredmény7 + "<hr>");
+    
+//Deltoid kerület
+function deltoidKerulet(e_oldal,f_oldal){
+	let keruletD = (e_oldal*2)+(f_oldal*2);
+    
+    return keruletD;
+    }
+    
+    let eredmény8 = deltoidKerulet(5,7)
+    document.write("A deltoid kerulete:" +eredmény8 + "<hr>");
+</script>
