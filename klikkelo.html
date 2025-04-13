@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klikkelő játék</title>
+    <style>
+        body {
+            color: antiquewhite;
+        }
+
+        #ugralofelirat {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 50px;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+            background-color: blue;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+
+        #szamlalo {
+            position: fixed;
+            top: 0px;
+            left: 50%;
+            width: 80px;
+            transform: translate(-25px);
+            text-align: center;
+            background-color: blue;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="szamlalo">0</div>
+
+
+    <div id="ugralofelirat">
+        <img src="1146002.png" alt="sor" width="60px"> Klikk egy sörért
+    </div>
+
+    <script>
+        ugralofelirat.addEventListener("click", ugras);
+
+        function ugras() {
+            let elem = document.querySelector("#ugralofelirat");
+            let randomTopErtek = Math.round(Math.random() * 600);
+            let randomLeftErtek = Math.round(Math.random() * 1600);
+            elem.style.top = randomTopErtek + "px";
+            elem.style.left = randomLeftErtek + "px";
+
+
+            let klikkSzam = Number(document.querySelector("#szamlalo").innerHTML) + 1;
+            document.querySelector("#szamlalo").innerHTML = klikkSzam;
+        }
+    </script>
+</body>
+
+</html>
